@@ -76,7 +76,7 @@ int main(){
     pspDebugScreenSetTextColor(YELLOW);
     pspDebugScreenPrintf("P-SPot Extractor vers. %s\n", VERSION);
     pspDebugScreenPrintf("by Sakya (based on Tipster's UnzipUnrar)\n");
-    pspDebugScreenPrintf("Source available at http://sakya.altervista.org\n");
+    pspDebugScreenPrintf("Source available at https://github.com/PSP-Archive/P-SPot_Extractor\n");
     pspDebugScreenPrintf("%s\n\n", SEPARATOR);
     pspDebugScreenSetTextColor(WHITE);
 
