@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <malloc.h>
 #include <errno.h>
+#include <sys/unistd.h> // motolegacy (22/07/2021) - include unistd to declare chdir()
 #include "unzip.h"
 #include "unzipToDir.h"
 

@@ -136,9 +136,15 @@ int main(){
 
     if (config.autoDelete){
         pspDebugScreenPrintf("Removing temp file: ");
-        sprintf(buffer, "%s/%s", ebootDirectory, "EBOOT.PBP");
+        // motolegacy (22/07/2021) -- replace sprintf() with strcpy() and strcat()
+        strcpy(buffer, ebootDirectory);
+        strcat(buffer, "/");
+        strcat(buffer, "EBOOT.PBP");
         sceIoRemove(buffer);
-        sprintf(buffer, "%s/%s", ebootDirectory, "unzip.cfg");
+        // motolegacy (22/07/2021) -- ^^^
+        strcpy(buffer, ebootDirectory);
+        strcat(buffer, "/");
+        strcat(buffer, "unzip.cfg");
         sceIoRemove(buffer);
         chdir(ebootDirectory);
         sceIoRemove(config.zipFile);

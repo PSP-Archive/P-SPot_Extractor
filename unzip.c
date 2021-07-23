@@ -1168,7 +1168,8 @@ extern int ZEXPORT unzOpenCurrentFile3 (file, method, level, raw, password)
     if (password != NULL)
     {
         int i;
-        s->pcrc_32_tab = get_crc_table();
+        // motolegacy (22/07/2021) - cast to const unsigned long* to ease compilation warning
+        s->pcrc_32_tab = (const unsigned long*)get_crc_table();
         init_keys(password,s->keys,s->pcrc_32_tab);
         if (ZSEEK(s->z_filefunc, s->filestream,
                   s->pfile_in_zip_read->pos_in_zipfile +
