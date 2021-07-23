@@ -13,8 +13,12 @@ LIBDIR =
 
 LIBS = -lpspsdk -lz
 LDFLAGS =
-EXTRA_TARGETS = EBOOT.PBP
+#EXTRA_TARGETS = EBOOT.PBP
 PSP_EBOOT_TITLE = P-SPot Extractor
 #PSP_EBOOT_ICON = ICON0.PNG
 PSPSDK=$(shell psp-config --pspsdk-path)
 include $(PSPSDK)/lib/build.mak
+
+install: EBOOT.PBP
+	mv EBOOT.PBP bin/
+	@echo DONE

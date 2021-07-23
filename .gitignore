@@ -1,0 +1,5 @@
+bin/EBOOT.PBP
+*.o
+*.elf
+*.prx
+PARAM.SFO
