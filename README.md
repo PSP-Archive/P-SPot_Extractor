@@ -9,7 +9,7 @@ The following changes have been made from the original source code:
 * Built EBOOT and configuration file ([unzip.cfg](bin/unzip.cfg)) exist in the `bin` directory, for cleanliness.
 * Several compilation warnings were fixed, the source should now compile without complaint with GCC.
 
-The original, unmodified source code can be found within commit b917ece. It is confirmed to work on the latest version of the PSPSDK at the time of writing.
+The original, unmodified source code can be found within commit [b917ece](https://github.com/PSP-Archive/P-SPot_Extractor/commit/b917ecee1eccc3c5b01b9214649b00dec7f01f8a). It is confirmed to work on the latest version of the PSPSDK at the time of writing.
 
 ## Usage
 ---
